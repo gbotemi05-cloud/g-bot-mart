@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment Success | G-BOT MART</title>
+
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 min-h-screen flex items-center justify-center px-4 py-10">
+
+    <main class="w-full max-w-lg">
+
+        <div class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 text-center">
+
+            <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-blue-100 flex items-center justify-center">
+                <span class="text-3xl">
+                    ✅
+                </span>
+            </div>
+
+            <h1 class="text-3xl font-black text-gray-900">
+                Order Successful!
+            </h1>
+
+            <p class="text-gray-500 mt-3 leading-6">
+                Thank you for your order. We've received your order and will process it shortly.
+            </p>
+
+            <div class="mt-8 rounded-2xl bg-gray-50 border border-gray-100 p-5 text-left">
+
+                <h2 class="text-lg font-bold text-gray-900 mb-4">
+                    Order Details
+                </h2>
+
+                <div class="space-y-4">
+
+                    <div class="flex justify-between gap-4">
+                        <span class="text-gray-500">
+                            Customer
+                        </span>
+
+                        <span id="customer-name" class="font-semibold text-gray-900 text-right">
+                            —
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between gap-4">
+                        <span class="text-gray-500">
+                            Email
+                        </span>
+
+                        <span id="customer-email" class="font-semibold text-gray-900 text-right break-all">
+                            —
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between gap-4">
+                        <span class="text-gray-500">
+                            Payment
+                        </span>
+
+                        <span id="payment-method" class="font-semibold text-gray-900 text-right">
+                            —
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between gap-4">
+                        <span class="text-gray-500">
+                            Status
+                        </span>
+
+                        <span id="payment-status" class="font-semibold text-green-700 text-right">
+                            —
+                        </span>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-4 flex justify-between gap-4">
+                        <span class="font-bold text-gray-900">
+                            Total
+                        </span>
+
+                        <span id="order-total" class="font-black text-green-700 text-lg text-right">
+                            ₦0
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mt-5 rounded-2xl bg-gray-50 border border-gray-100 p-5 text-left">
+
+                <h2 class="text-lg font-bold text-gray-900 mb-4">
+                    Items Purchased
+                </h2>
+
+                <div id="order-items" class="space-y-3">
+
+                </div>
+
+            </div>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+
+                <a
+                    href="store.html"
+                    class="flex-1 bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-5 rounded-xl transition-colors"
+                >
+                    Continue Shopping
+                </a>
+
+                <a
+                    href="index.html"
+                    class="flex-1 border border-gray-200 hover:bg-gray-50 text-gray-900 font-bold py-3 px-5 rounded-xl transition-colors"
+                >
+                    Back to Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="success.js"></script>
+
+</body>
+</html>

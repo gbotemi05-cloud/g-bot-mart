@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkOUT| G-BOT MART</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-xl border-b border-gray-200/70 shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-22 flex items-center justify-between">
+                <a href="#" class=" flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-green-900 text-white flex items-center justify-center text-xl font-black shadow-lg shadow-green-900/20 group-hover:scale-105 group-hover:rotate-3 transition-all duration-300">
+                        G
+                    </div>
+                    <span class="block text-xl font-black tracking-tight text-gray-900">
+                        G-BOT
+                    </span>
+                    <span class="block text-[10px] font-semibold tracking-[0.25] text-green-700 uppercase">
+                    G-BOT MART 🏬
+                    </span>
+                </a>
+
+                <!-- <button id="theme-toggle" type="button" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-lg hover:bg-gray-100 transition">
+                    🌗
+                </button> -->
+                <a href="./store.html">
+                <button id="open-cart" type="button"
+                class=" relative flex items-center gap-3 px-5 py-3 rounded-full text-sm font-semibold bg-gray-900 text-white shadow-lg hover:bg-green-800 hover:shadow-xl hover:translate-y-0.5 transition-all duration-300"><span class="text-xl">🛒</span>
+                    <span class="hidden sm:inline tracking-wide">Continue Shopping</span>
+                </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-8">
+            Checkout
+        </h1>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <section class="lg:col-span-2 bg-white p-6 rounded-xl shadow-md">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-6">
+                        Customer Information
+                    </h2>
+                    <form id="checkout-form" class="space-y-5">
+                        <div>
+                            <label for="full-name" class="block text-sm font-medium text-gray-700 mb-2">
+                                Full Name
+                            </label>
+                            <input type="text" id="full-name" name="fullName" required readonly class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-700" placeholder="Enter your full name">
+                        </div> 
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                                Email
+                            </label>
+                            <input type="email" id="email" name="email" required readonly class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-700" placeholder="Enter your email address">
+                        </div> 
+                        <div>
+                            <label for="full-name" class="block text-sm font-medium text-gray-700 mb-2">
+                                Address
+                            </label>
+                            <input type="text" id="address" name="address" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-700" placeholder="Enter your delivery address">
+                        </div> 
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+                                Phone
+                            </label>
+                            <input type="tel" id="phone" name="phone" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-700" placeholder="Enter your phone number">
+                        </div> 
+                        <h2 class="text-xl font-semibold text-gray-800 mb-6 mt-8">
+                            Payment Method
+                        </h2>
+                        <div class="space-y-3">
+                           <label class="flex items-center gap-3 border border-gray-300 rounded-lg p-4 cursor-pointer">
+                            <input type="radio" name="paymentMethod" value="card" a>
+                            <span>Card Payment</span>
+                           </label>
+                           <label class="flex items-center gap-3 border-gray-300 border rounded-lg p-4 cursor-pointer">
+                            <input type="radio" name="paymentMethod" value="cash">
+                            <span>Cash on Delivery</span>
+                           </label>
+                        </div>
+                        <!-- <div class="mt-5 space-y-5 card-details">
+                            <label for="card-number" class="block text-sm font-medium text-gray-700 mb-2">
+                                Card number
+                            </label>
+                            <input type="number" id="card-number" name="cardNumber" placeholder="1234 5678 9812 3456" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2
+                            focus:ring-green-700">
+                        </div>
+                        <div class="mt-5 space-y-5 card-details">
+                            <label for="expiry-date" class="block text-sm font-medium text-gray-700 mb-2">
+                                Expiry Date
+                            </label>
+                            <input type="month" id="expiry-date" name="expiryDate" placeholder="MM/YY" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2
+                            focus:ring-green-700">
+                        </div>
+                        <div class="mt-5 space-y-5 card-details">
+                            <label for="cvv" class="block text-sm font-medium text-gray-700 mb-2">
+                                CVV
+                            </label>
+                            <input type="number" id="cvv" name="cvv" placeholder="123" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2
+                            focus:ring-green-700">
+                        </div> -->
+                        <button type="submit" class="w-full bg-green-700 text-white py-3 rounded-lg font-semibold hover:bg-green-800 transition">
+                            Place Order
+                        </button>
+                    </form>
+                </section>
+                <section class="bg-white p-6 rounded-xl shadow-md">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-6">
+                        Order Summary
+                    </h2>
+                    <div class="space-y-4" id="checkout-items">
+                        <template id="checkout-item-template">
+                            <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 bg-gray-100 rounded-lg overflow-hidden">
+                                <img src="" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 checkout-item-title"></p>
+                                <p class="text-sm text-gray-500 checkout-item-quantity"></p>
+                            </div>
+                            <p class="font-semibold text-gray-800 checkout-item-price"></p>
+                            </div>
+                        </template>
+                        </div>
+                        <div class="border-t border-gray-200 mt-26 pt-4 flex justify-between">
+                            <span class="text-gray-600">Subtotal</span>
+                            <span id="checkout-subtotal" class="font-semibold text-gray-800">$0.00</span>
+                        </div>
+                        <div class="border-t border-gray-200 mt-4 pt-4 flex justify-between">
+                            <span class="text-lg font-semibold text-gray-800">Total</span>
+                            <span id="checkout-total" class="text-lg font-bold text-green-700">$0.00</span>
+                        </div>
+                        
+                    
+                </section>
+            </div>
+    </main>
+    <div id="toast"
+         class="fixed bottom-6 right-6 z-50 bg-gray-900 text-white px-5 py-3 rounded-xl shadow-xl opacity-0 translate-y-10 transition-all duration-300">
+        <span id="toast-message"></span>
+    </div>
+    <script src="https://js.paystack.co/v2/inline.js"></script>
+    <script src="checkout.js"></script>
+    
+</body>
+</html>

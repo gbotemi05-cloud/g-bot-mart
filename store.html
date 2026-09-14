@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900">
+   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-xl border-b border-gray-200/70 shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-22 flex items-center justify-between">
+                <a href="#" class=" flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-green-900 text-white flex items-center justify-center text-xl font-black shadow-lg shadow-green-900/20 group-hover:scale-105 group-hover:rotate-3 transition-all duration-300">
+                        G
+                    </div>
+                    <span class="block text-xl font-black tracking-tight text-gray-900">
+                        G-BOT
+                    </span>
+                    <span class="block text-[10px] font-semibold tracking-[0.25] text-green-700 uppercase">
+                    G-BOT MART 🏬
+                    </span>
+                </a>
+                <div class="md:flex hidden items-center gap-10 mr-12 ml-auto">
+                    <a href="#" class="text-sm font-semibold text-green-700 relative" >Home</a>
+                    <a href="#products" class="relative text-sm font-semibold text-gray-500 hover:text-green-700 hover:-translate-y-0.5 transition-all duration-200 after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-0 after:bg-green-700 after:transition-all after:duration-200 hover:after:w-full">
+                        Shop
+                    </a>
+                    <a href="#categories" class="relative text-sm font-semibold text-gray-500 hover:text-green-700 hover:-translate-y-0.5 transition-all duration-200 after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-0 after:bg-green-700 after:transition-all after:duration-200 hover:after:w-full">
+                        Categories
+                    </a>
+                </div>
+                <span id="user-greeting" class="text-sm font-semibold px-4"></span>
+                <button id="theme-toggle" type="button" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-lg hover:bg-gray-100 transition">
+                    🌗
+                </button>
+                <button id="open-cart" type="button"
+                class=" relative flex items-center gap-3 px-5 py-3 ml-9 rounded-full text-sm font-semibold bg-gray-900 text-white shadow-lg hover:bg-green-800 hover:shadow-xl hover:translate-y-0.5 transition-all duration-300"><span class="text-xl">🛒</span>
+                    <span class="hidden sm:inline tracking-wide">Cart</span>
+                    <span id="cart-count" class="bg-green-500 text-white text-xs font-bold min-w-6 h-6 rounded-full flex items-center justify-center px-1.5">0</span>
+                </button>
+                <button id="logout-btn" type="button" class="px-4 py-3 ml-15 rounded-xl border border-gray-200 test-sm font-semibold hover:bg-gray-transition">
+                    Log out
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="max-w-7xl mx-auto px-4 py-10">
+            <section class="pt-6 pb-10">
+                <h1 class="text-4xl sm:text-5xl font-black tracking-[-0.03em] text-gray-900 leading-tight">Everything you need.
+                    All in one Place.
+                </h1>
+                <p class=" text-base sm:text-lg text-gray-500 mt-3 max-w-xl leading-relaxed">Shop quality essentials, electronics, fashion and more- carefully selected for everyday living.</p>
+            </section>
+            <section class="mt-8 rounded-3xl border border-gray-200 bg-white p-5 shadow-md sm:p-6">
+                <div class="flex flex-col sm:flex-row gap-5 max-w-4xl">
+                    <input id="search-input" type="text" placeholder="Search products...." class="flex-1 px-5 py-3.5 border border-gray-200 rounded-2xl bg-gray-50 focus:bg-white shadow-sm outline-none focus:ring-4 focus:border-green-500 focus:ring-green-500/10 transition-all duration-200">
+                    <select id="category-filter" class="px-5 py-3.5 border border-gray-200 bg-gray-50 rounded-2xl shadow-sm outline-none focus:bg-white focus:border-green-500 focus:ring-4 focus:ring-green-500/10 transition-all duration-200 cursor-pointer">
+                        <option value="all">
+                            All Categories
+                        </option>
+                        <option value="Electronics">
+                            Electronics
+                        </option>
+                        <option value="Clothing">
+                            Clothing
+                        </option>
+                        <option value="Footwear">
+                            Footwear
+                        </option>
+                        <option value="Accessories">
+                            Accessories
+                        </option>
+                    </select>
+                </div>
+            </section>
+            <section class="mt-10">
+                <h2 class="text-3xl font-black tracking-tight mb-6">
+                    Products
+                </h2>
+                <div id="loading" class="text-center py-8 hidden">
+                    Loading products...
+                </div>
+                <div class="hidden text-center py-8 text-red-600" id="error-message">
+                    Something went wrong while loading the products
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7" id="product-container">
+
+                </div>
+                <template id="product-template">
+                    <article class="h-full flex flex-col bg-white border border-gray-200/80 rounded-3xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <div class="h-90 bg-gray-50 p-4 flex items-center justify-center">
+                            <img class="product-image w-full h-full object-cover scale-110" src="" alt="">
+                        
+                        </div>
+                        <div class="p-5 flex flex-col min-h-64">
+                            <h3 class="product-title text-lg font-bold text-gray-900">
+
+                            </h3>
+                            <p class="product-description text-sm leading-6 text-gray-500"></p>
+                            <p class="product-price mt-2 text-2xl font-black text-green-700">
+
+                            </p>
+                            <button type="button" class="add-to-cart mt-auto w-full bg-green-700 text-white py-3 rounded-xl shadow-sm font-medium hover:bg-green-800 hover:shadow-md transition">
+                                Add to Cart
+
+                            </button>
+                        </div>
+
+                    </article>
+
+                </template>
+            </section>
+            
+        </div>
+    </main>
+   
+<div id="cart-drawer"
+    class="fixed top-0 right-0 h-full w-full sm:w-96 bg-white shadow-2xl z-50 translate-x-full transition-transform duration-300">
+
+    <div class="flex items-center justify-between p-5 border-b">
+        <h2 class="text-xl font-bold">Shopping Cart</h2>
+
+        <button id="close-cart"
+            type="button"
+            class="text-2xl text-gray-500 hover:text-gray-900">
+            &times;
+        </button>
+    </div>
+
+    <div id="cart-container" class="p-5 overflow-y-auto h-[calc(100%-150px)]">
+       
+    </div>
+     <template id="cart-item-template">
+    <div class="flex items-center gap-4 border-b py-4">
+
+        <img class="cart-item-image w-16 h-16 object-contain" src="" alt="">
+
+        <div class="flex-1">
+            <h3 class="cart-item-title font-semibold"></h3>
+
+            <p class="cart-item-price text-green-700"></p>
+
+
+            <div class="flex items-center gap-3 mt-2">
+            <button
+
+                    type="button"
+
+                    class="decrease-quantity w-7 h-7 rounded bg-gray-200 hover:bg-gray-300 font-bold">
+                    −
+                </button>
+
+                <span class="cart-item-quantity font-medium">
+
+                    1
+
+                </span>
+
+                <button
+
+                    type="button"
+
+                    class="increase-quantity w-7 h-7 rounded bg-gray-200 hover:bg-gray-300 font-bold">
+
+                    +
+
+                </button>
+
+            </div>
+            
+
+            <button type="button"
+                class="remove-cart-item text-red-600 text-sm mt-2 hover:text-red-800">
+                Remove
+            </button>
+        </div>
+
+    </div>
+</template>
+
+    <div class="absolute bottom-0 left-0 right-0 bg-white border-t p-5">
+        <div class="flex justify-between items-center">
+            <span class="font-semibold">Total</span>
+
+            <span id="cart-total"
+                class="text-xl font-bold text-green-700">
+                $0.00
+            </span>
+        </div>
+        <a href="checkout.html" class="block w-full text-center bg-green-700 text-white py-3 rounded-lg font-semibold hover:bg-green-800 transition mt-4">
+            Proceed to Checkout
+        </a>
+    </div>
+
+</div>
+<div id="toast" class="fixed bottom-5 right-5 z-100 bg-green-700 text-white px-5 py-3 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-300">
+    <span id="toast-message"></span>
+</div> 
+<script src="./script.js"></script>
+<script src="./fecthcart.js"></script>
+</body>
+</html>
