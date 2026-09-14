@@ -113,6 +113,12 @@
       "email": "gbotemiadisa05@gmail.com",
       "password": "Owner@134",
       "id": "4LnfeGBA3bU"
+    },
+    {
+      "fullName": "new user",
+      "email": "newuser@gamil.com",
+      "password": "@Newuser123",
+      "id": "D563CSFakV0"
     }
   ],
   "products": [
@@ -3942,6 +3948,108 @@
       "paymentMethods": "Cash on Delivery",
       "status": "Pending",
       "id": "Gw2sLmkGfLo"
+    },
+    {
+      "customer": {
+        "fullName": "new user",
+        "email": "newuser@gamil.com",
+        "address": "No18",
+        "phone": "09131172807"
+      },
+      "items": [
+        {
+          "productId": "1",
+          "title": "Noise-Cancelling Wireless Headphones",
+          "price": 299999,
+          "quantity": 2,
+          "image": "./images/Had Fones.png",
+          "id": "bfuqNeMLXfU"
+        },
+        {
+          "productId": "3",
+          "title": "Smart Watch",
+          "price": 89999,
+          "quantity": 2,
+          "image": "./images/Apple Watch Series 6.png",
+          "id": "4HX-0Vyy4fY"
+        },
+        {
+          "productId": "2",
+          "title": "Minimalist Cotton T-Shirt",
+          "price": 2499,
+          "quantity": 2,
+          "image": "./images/Edrok designs.png",
+          "id": "DKW0vhkVWHQ"
+        },
+        {
+          "productId": "4",
+          "title": "Running Sneakers",
+          "price": 69999,
+          "quantity": 1,
+          "image": "./images/Mens sports shoes new mens shoes fashionable casual shoes student running shoes Korean-style mesh lightweight thick-soled dad shoes.png",
+          "id": "OTBwZ5pLUzw"
+        },
+        {
+          "productId": "8",
+          "title": "Denim Jacket",
+          "price": 79999,
+          "quantity": 1,
+          "image": "./images/denim.png",
+          "id": "tyYrzaHXYUM"
+        },
+        {
+          "productId": "7",
+          "title": "Bluetooth Speaker",
+          "price": 45999,
+          "quantity": 1,
+          "image": "./images/bluetooth speaker.png",
+          "id": "0eFx6ypfReY"
+        },
+        {
+          "productId": "6",
+          "title": "Leather Backpack",
+          "price": 59999,
+          "quantity": 1,
+          "image": "./images/Men's Bags _ Nordstrom.png",
+          "id": "LMbI4L81IXI"
+        },
+        {
+          "productId": "5",
+          "title": "Ceramic Coffee Mug",
+          "price": 14500,
+          "quantity": 1,
+          "image": "./images/mugs.png",
+          "id": "Eh2Sd_PlzgM"
+        }
+      ],
+      "total": 1055490,
+      "paymentMethods": "Card Payment",
+      "paymentStatus": "Paid",
+      "paymentReference": "T068607563126084",
+      "status": "Processing",
+      "id": "GPCtN9JSvZo"
+    },
+    {
+      "customer": {
+        "fullName": "new user",
+        "email": "newuser@gamil.com",
+        "address": "No18",
+        "phone": "09131172807"
+      },
+      "items": [
+        {
+          "productId": "4",
+          "title": "Running Sneakers",
+          "price": 69999,
+          "quantity": 1,
+          "image": "./images/Mens sports shoes new mens shoes fashionable casual shoes student running shoes Korean-style mesh lightweight thick-soled dad shoes.png",
+          "id": "VZN4R0tHn-8"
+        }
+      ],
+      "total": 69999,
+      "paymentMethods": "Cash on Delivery",
+      "status": "Pending",
+      "id": "cisL9NL6AoI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
