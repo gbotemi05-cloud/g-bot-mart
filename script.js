@@ -26,7 +26,7 @@ logoutBtn.addEventListener("click", ()=>{
 
 
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://g-bot-mart-3.onrender.com";
 let allProducts = [];
 let cartIsOpen = false;
 

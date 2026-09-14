@@ -1,6 +1,4 @@
-
-
-const API_URL = "http://localhost:3000";
+const API_URL = "https://g-bot-mart-3.onrender.com";
 console.log("SIGNUP JS IS WORKING");
 
 const signupForm = document.getElementById("signup-form");

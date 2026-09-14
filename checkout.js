@@ -1,6 +1,6 @@
 const PAYSTACK_PUBLIC_KEY = "pk_test_dfdaba709e00ea2ed92a376726311d644580e557";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://g-bot-mart-3.onrender.com";
 
 const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 

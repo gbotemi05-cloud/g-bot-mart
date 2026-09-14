@@ -1,0 +1,1 @@
+const API_URL = "https://g-bot-mart-3.onrender.com";

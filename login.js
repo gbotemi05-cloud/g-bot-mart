@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "https://g-bot-mart-3.onrender.com";
 
 const loginForm = document.getElementById("login-form");
 
