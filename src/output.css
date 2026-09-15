@@ -321,8 +321,17 @@
   .mt-auto {
     margin-top: auto;
   }
+  .mr-4 {
+    margin-right: calc(var(--spacing) * 4);
+  }
   .mr-12 {
     margin-right: calc(var(--spacing) * 12);
+  }
+  .mr-20 {
+    margin-right: calc(var(--spacing) * 20);
+  }
+  .mr-204 {
+    margin-right: calc(var(--spacing) * 204);
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -339,11 +348,26 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
+  .ml-4 {
+    margin-left: calc(var(--spacing) * 4);
+  }
   .ml-9 {
     margin-left: calc(var(--spacing) * 9);
   }
+  .ml-10 {
+    margin-left: calc(var(--spacing) * 10);
+  }
   .ml-15 {
     margin-left: calc(var(--spacing) * 15);
+  }
+  .ml-20 {
+    margin-left: calc(var(--spacing) * 20);
+  }
+  .ml-30 {
+    margin-left: calc(var(--spacing) * 30);
+  }
+  .ml-204 {
+    margin-left: calc(var(--spacing) * 204);
   }
   .ml-auto {
     margin-left: auto;
@@ -1000,6 +1024,15 @@
     outline-style: none;
   }
   @media (width >= 40rem) {
+    .sm\:ml-10 {
+      margin-left: calc(var(--spacing) * 10);
+    }
+    .sm\:ml-111 {
+      margin-left: calc(var(--spacing) * 111);
+    }
+    .sm\:ml-auto {
+      margin-left: auto;
+    }
     .sm\:inline {
       display: inline;
     }
