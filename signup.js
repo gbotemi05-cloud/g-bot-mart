@@ -71,3 +71,44 @@ if(existingUsers.length > 0) {
          });
 
 });
+
+let togglePassword = document.getElementById("toggle-password");
+let passwordInput = document.getElementById("signup-password");
+
+let toggleConfirmPassword = document.getElementById("toggle-confirm-password");
+let confirmPasswordInput = document.getElementById("confirm-password");
+
+
+togglePassword.addEventListener("click", () => {
+
+    if (passwordInput.type === "password") {
+
+        passwordInput.type = "text";
+        togglePassword.src = "eye-open.png";
+
+    } else {
+
+        passwordInput.type = "password";
+        togglePassword.src = "eye-close.png";
+
+    }
+
+});
+
+
+toggleConfirmPassword.addEventListener("click", () => {
+
+    if (confirmPasswordInput.type === "password") {
+
+        confirmPasswordInput.type = "text";
+        toggleConfirmPassword.src = "eye-open.png";
+
+    } else {
+
+        confirmPasswordInput.type = "password";
+        toggleConfirmPassword.src = "eye-close.png";
+
+    }
+
+});
+ 

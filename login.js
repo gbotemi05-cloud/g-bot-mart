@@ -40,3 +40,20 @@ loginForm.addEventListener("submit", async (event) =>{
     },
     1500);
 });
+
+let togglePassword = document.getElementById("toggle-password");
+let passwordInput = document.getElementById("login-password");
+let eyeIcon = document.getElementById("eye-icon");
+
+togglePassword.addEventListener("click", () => {
+    if(passwordInput.type === "password"){
+        passwordInput.type = "text";
+        eyeIcon.src = "eye-open.png";
+    }
+    else{
+        passwordInput.type = "password";
+        eyeIcon.src = "eye-close.png";
+    }
+    togglePassword.src = passwordInput.type === "password" ? "eye-close.png" : "eye-open.png";
+    
+});

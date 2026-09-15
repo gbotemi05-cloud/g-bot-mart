@@ -125,7 +125,7 @@
     {
       "id": "1",
       "title": "Noise-Cancelling Wireless Headphones",
-      "price": 299999,
+      "price": 14999,
       "category": "Electronics",
       "description": "Premium over-ear headphones with active noise cancellation.",
       "image": "./images/Had Fones.png"
@@ -133,7 +133,7 @@
     {
       "id": "2",
       "title": "Minimalist Cotton T-Shirt",
-      "price": 2499,
+      "price": 22999,
       "category": "Clothing",
       "description": "Ultra-soft cotton t-shirt for everyday wear.",
       "image": "./images/Edrok designs.png"
@@ -141,7 +141,7 @@
     {
       "id": "3",
       "title": "Smart Watch",
-      "price": 89999,
+      "price": 39999,
       "category": "Electronics",
       "description": "Smart watch with fitness and notification features.",
       "image": "./images/Apple Watch Series 6.png"
@@ -149,7 +149,7 @@
     {
       "id": "4",
       "title": "Running Sneakers",
-      "price": 69999,
+      "price": 19999,
       "category": "Footwear",
       "description": "Comfortable sneakers designed for everyday running.",
       "image": "./images/Mens sports shoes new mens shoes fashionable casual shoes student running shoes Korean-style mesh lightweight thick-soled dad shoes.png"
@@ -165,7 +165,7 @@
     {
       "id": "6",
       "title": "Leather Backpack",
-      "price": 59999,
+      "price": 39999,
       "category": "Accessories",
       "description": "Stylish backpack suitable for school, work, or travel.",
       "image": "./images/Men's Bags _ Nordstrom.png"
@@ -181,7 +181,7 @@
     {
       "id": "8",
       "title": "Denim Jacket",
-      "price": 79999,
+      "price": 23999,
       "category": "Clothing",
       "description": "Classic denim jacket suitable for casual outfits.",
       "image": "./images/denim.png"
